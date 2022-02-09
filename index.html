@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <img src="graphic1.png" alt="logo" style="width: fit-content;">
+    
+        <nav>
+    <div class="sidenav">
+        <button class="dropdown-btn"><img src="icondrop.png" alt="icondrop">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <nav class="navdesktop">
+      <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+</header>
+
+
+    <section class="headers">
+<h1 class="h1">Become our partner</h1>
+<h2 class="h2">Send request to be approved to shop on our website</h2>
+</section>
+
+<section class="mainsection">
+    <form action="request">
+            <h4>Name of your restaurant:</h4>
+            <input type="text" class="input1">
+            
+            <h4>Address of your restaurant:</h4>
+            <input type="text" class="input1">
+
+            <h4>E-mail:</h4>
+            <input type="email" class="input1">
+
+            <h4>Message</h4>
+            <textarea rows="7" cols="2" class="input2"></textarea>
+
+            <section class="buttons">
+            <input type="submit" value="Send" class="send">
+            <input type="reset" value="Cancel" class="cancel"> 
+            </section>
+    </form>
+</section>
+
+
+<style>
+    footer{
+        background-color:#43662B ;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-family: opensans;
+        font-size: 8px;
+        
+    
+    }
+    .socialico{
+        width: 20px ;
+        padding: 10px;
+    
+    }
+    .anotationframe{
+        margin: 15px;
+    }
+    </style>
+    
+    
+    <footer>
+        <container class="socialframe">
+            <a href="default.asp"><img class="socialico"src="face.png"></a>
+            <a href="default.asp"><img class="socialico"src="insta.png"></a>
+            <a href="default.asp"><img class="socialico"src="wats.png"></a>
+        </container>
+        <container class="anotationframe">
+            <p>follow us</p>
+            <p>Copy Rights ©</p>
+        </container>
+    </footer>
+
+</body>
+<script>
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

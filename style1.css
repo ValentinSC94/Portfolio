@@ -1,0 +1,292 @@
+@media  (min-width: 750px) {
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #43662B;
+    margin: 0px;
+    
+}
+
+.sidenav {
+    display: none;
+}
+.navdesktop {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    float: right;
+}
+
+.navdesktop a {
+    text-decoration-line: none;
+    color: #fff;
+    font-family: gothic;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+}
+
+.headers {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+.h1 {
+    font-family: gothic;
+    color: #43662B;
+}
+.h2 {
+    font-family: sansopen ;
+}
+
+h4 {
+    font-family: sansopen;
+}
+
+
+
+.input1 {
+    background-color: #F2DE8B;
+    width: 40em;
+    height: 3em;
+    border-color: transparent;
+    
+}
+.input2 {
+    background-color: #F2DE8B;
+    border-color: transparent;
+}
+textarea {
+    resize: none;
+    width: 40em;
+    height: 20em;
+  }
+
+.mainsection {
+   display: flex;
+   justify-content: center;
+   padding: 3em;
+   margin-bottom: -20em;
+   
+   
+}
+.buttons {
+    margin-left: 20em;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.buttons input {
+    border-radius: 6px;
+    border-color: transparent;
+    height: 2em;
+    font-family: sansopen;
+    width: 7em;
+    font-size: 15px;
+    
+    
+    
+}
+
+.send {
+    width: 8em;
+    background-color: #7ab054;
+}
+.cancel {
+    background-color: #808080;
+    width: 8em;
+}
+
+footer {
+    background-color: #43662B;
+    margin-top: 22rem;
+}
+}
+
+
+/*Font adding*/
+
+@font-face {
+    font-family: gothic;
+    src: url(gothic.ttf);
+   
+}
+
+@font-face {
+    font-family: sansopen;
+    src: url(sansopen.ttf);
+}
+
+
+/*media query for mobile*/
+
+
+
+@media  (max-width: 750px) {
+    body {
+        margin: 0px;
+        
+    }
+    
+    header {
+        margin: 0px;
+        background-color: #43662B;
+    }
+    header img{
+        height: 40px;
+    }
+    .headers {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       padding: 10px;
+    }
+    .h1 {
+        font-family: gothic;
+        color: #43662B;
+        font-size: 20px;
+    }
+    .h2 {
+        font-family: sansopen ;
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+    
+    h4 {
+        font-family: sansopen;
+        font-size: 13px;
+    }
+    
+    
+    footer {
+        background-color: #43662B;
+        margin: 0px;
+        margin-top: 25em;
+    }
+    .input1 {
+        background-color: #F2DE8B;
+        width:18rem ;
+        height: 2rem;
+        border-color: transparent;
+        
+    }
+    .input2 {
+        background-color: #F2DE8B;
+        border-color: transparent;
+    }
+    textarea {
+        resize: none;
+        width: 18rem;
+        height: 18rem;
+      }
+    
+    .mainsection {
+       display: flex;
+       justify-content: center;
+       padding: 3px;
+       margin-bottom: -10em;
+       margin-left: 1em;
+       
+       
+    }
+    .buttons {
+        margin-left: 3em;
+        padding: 5px;
+    }
+    
+    .buttons input {
+        border-radius: 16px;
+        border-color: transparent;
+        height: 2em;
+        font-family: sansopen;
+        
+    }
+    
+    .send {
+        width: 8em;
+        background-color: #7ab054;
+    }
+    .cancel {
+        background-color: #808080;
+        width: 8em;
+    }
+
+    /* Fixed sidenav, full height */
+.sidenav {
+    
+position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    width:100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+ .dropdown-btn {
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    background: none;
+    border: none;
+    width:50px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    margin-top: 43px;
+    margin-right: -75px;
+    height: 300px;
+    width: 110px;
+    background-color: #43662B;
+    padding: 10px;
+    float: right;
+
+    
+    
+  }
+
+  .dropdown-container a {
+      text-decoration-line: none;
+      display: flex;
+      justify-content: space-between;
+      justify-content: left;
+      flex-direction: column;
+      padding: 20px;
+      color: #fff;
+      font-family: gothic;
+  }
+  
+  .navdesktop {
+      display: none;
+  }
+
+    }
+
+ 
